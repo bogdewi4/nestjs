@@ -5,7 +5,7 @@ import {
 } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ApiConfigService } from './api-config.service';
-import { HttpExceptionFilter } from 'src/common/exception-filters/http-exception-filter';
+import { HttpExceptionFilter } from '../common/exception-filters/http-exception-filter';
 
 export const applyAppSettings = (app: INestApplication) => {
   // app.useGlobalInterceptors()
